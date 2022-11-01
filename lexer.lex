@@ -12,7 +12,7 @@ int TokensNumber = 0;
 %option     noyywrap
 
 WHITESPACE  [\ \t\r]+
-KEYWORDS     ("AND"|"ARRAY"|"BEGIN"|"BY"|"DIV"|"DO"|"ELSE"|"ELSIF"|"END"|"EXIT"|"FOR"|"IF"|"IN"|"IS"|"LOOP"|"MOD"|"NOT"|"OF"|"OR"|"OUT"|"PROCEDURE"|"PROGRAM"|"READ"|"RECORD"|"RETURN"|"THEN"|"TO"|"TYPE"|"VAR"|"WHILE"|"WRITE")
+RESERVED     ("AND"|"ARRAY"|"BEGIN"|"BY"|"DIV"|"DO"|"ELSE"|"ELSIF"|"END"|"EXIT"|"FOR"|"IF"|"IN"|"IS"|"LOOP"|"MOD"|"NOT"|"OF"|"OR"|"OUT"|"PROCEDURE"|"PROGRAM"|"READ"|"RECORD"|"RETURN"|"THEN"|"TO"|"TYPE"|"VAR"|"WHILE"|"WRITE")
 DIGIT       [0-9]
 DIGITS         {DIGIT}+
 INTEGER     {DIGITS}
@@ -20,7 +20,8 @@ HEXDIGIT    [0-9A-Fa-f]
 REAL        {DIGIT}+"."{DIGIT}*
 
 STRING      \"([^"\n])*\"
-ID          [a-zA-Z][a-zA-Z0-9]*
+LETTER      [a-zA-Z]
+ID          {LETTER}({LETTER}|{DIGIT})*
 DELIMETER   (":"|";"|","|"."|"("|")"|"["|"]"|"{"|"}"|"[<"|">]"|'\')
 OPERATOR    (":="|"+"|"-"|"*"|"/"|"<"|"<="|">"|">="|"="|"<>")
 
@@ -36,9 +37,25 @@ COMMENT    \(\*.*\*\)
 
 {COMMENT}       PassN(row, col, "Comment  ", yytext);
 
-{KEYWORDS}       TokenOutput(row, col, "Keyword  ", yytext);
+{RESERVED}       TokenOutput(row, col, "Keyword  ", yytext);
 
-{STRING}        TokenOutput(row, col, "String   ", yytext);
+{STRING}  {
+    if(yyleng-2 < 256)
+    {
+        int i;
+        for(i=1; i<yyleng-1; i++)
+            if(!printable_ascii(yytext[i])) {
+                yyerror_unknownchar(yytext[i]);
+                return ERROR;
+            }
+
+        yylval.Tstring = create_cstr();
+        return STRINGT; 
+    }
+
+    yyerror("String too long");
+    return ERROR;
+}
 
 {OPERATOR}      TokenOutput(row, col, "Operator ", yytext);
 
