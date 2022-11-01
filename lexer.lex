@@ -11,18 +11,20 @@ int TokensNumber = 0;
 %option     nounput
 %option     noyywrap
 
-KEYWORD     ("AND"|"ARRAY"|"BEGIN"|"BY"|"DIV"|"DO"|"ELSE"|"ELSIF"|"END"|"EXIT"|"FOR"|"IF"|"IN"|"IS"|"LOOP"|"MOD"|"NOT"|"OF"|"OR"|"OUT"|"PROCEDURE"|"PROGRAM"|"READ"|"RECORD"|"RETURN"|"THEN"|"TO"|"TYPE"|"VAR"|"WHILE"|"WRITE")
+WHITESPACE  [\ \t\r]+
+KEYWORDS     ("AND"|"ARRAY"|"BEGIN"|"BY"|"DIV"|"DO"|"ELSE"|"ELSIF"|"END"|"EXIT"|"FOR"|"IF"|"IN"|"IS"|"LOOP"|"MOD"|"NOT"|"OF"|"OR"|"OUT"|"PROCEDURE"|"PROGRAM"|"READ"|"RECORD"|"RETURN"|"THEN"|"TO"|"TYPE"|"VAR"|"WHILE"|"WRITE")
 DIGIT       [0-9]
-INTEGER     {DIGIT}+
+DIGITS         {DIGIT}+
+INTEGER     {DIGITS}
+HEXDIGIT    [0-9A-Fa-f]
 REAL        {DIGIT}+"."{DIGIT}*
-WS          [ \t]+
 
-STRING      ["][^'\"']*["]
+STRING      \"([^"\n])*\"
 ID          [a-zA-Z][a-zA-Z0-9]*
 DELIMETER   (":"|";"|","|"."|"("|")"|"["|"]"|"{"|"}"|"[<"|">]"|'\')
 OPERATOR    (":="|"+"|"-"|"*"|"/"|"<"|"<="|">"|">="|"="|"<>")
 
-COMMENT     "(*"[^*)]*"*)"
+COMMENT    \(\*.*\*\)
 
 %%
 
@@ -34,7 +36,7 @@ COMMENT     "(*"[^*)]*"*)"
 
 {COMMENT}       PassN(row, col, "Comment  ", yytext);
 
-{KEYWORD}       TokenOutput(row, col, "Keyword  ", yytext);
+{KEYWORDS}       TokenOutput(row, col, "Keyword  ", yytext);
 
 {STRING}        TokenOutput(row, col, "String   ", yytext);
 
