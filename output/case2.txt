@@ -1,0 +1,91 @@
+ROW	COL	TYPE			TOKEN/ERROR MESSAGE
+1	1	reserved keyword	PROGRAM
+1	9	reserved keyword	IS
+2	5	reserved keyword	VAR
+2	9	identifer       	A
+2	10	delimeter       	,
+2	12	identifer       	B
+2	14	delimeter       	:
+2	16	identifer       	REAL
+2	21	operator        	:=
+2	24	real            	0.0
+2	27	delimeter       	;
+3	5	identifer       	C
+3	7	delimeter       	:
+3	9	identifer       	REAL
+3	14	operator        	:=
+3	17	real            	0.0
+3	20	delimeter       	;
+4	1	reserved keyword	BEGIN
+5	5	reserved keyword	WRITE
+5	11	delimeter       	(
+5	12	string          	"ENTER TWO REALS:"
+5	30	delimeter       	)
+5	31	delimeter       	;
+6	5	reserved keyword	READ
+6	10	delimeter       	(
+6	11	identifer       	A
+6	12	delimeter       	,
+6	14	identifer       	B
+6	15	delimeter       	)
+6	16	delimeter       	;
+7	5	identifer       	C
+7	7	operator        	:=
+7	10	real            	8.0
+7	13	delimeter       	;
+8	5	reserved keyword	WRITE
+8	11	delimeter       	(
+8	12	string          	"A="
+8	16	delimeter       	,
+8	18	identifer       	A
+8	19	delimeter       	,
+8	21	string          	", B="
+8	27	delimeter       	,
+8	29	identifer       	B
+8	30	delimeter       	,
+8	32	string          	", C="
+8	38	delimeter       	,
+8	40	identifer       	C
+8	41	delimeter       	)
+8	42	delimeter       	;
+9	5	identifer       	C
+9	7	operator        	:=
+9	10	identifer       	A
+9	12	operator        	-
+9	14	delimeter       	(
+9	15	operator        	-
+9	16	identifer       	B
+9	17	delimeter       	)
+9	19	operator        	+
+9	21	identifer       	C
+9	22	delimeter       	;
+10	5	identifer       	C
+10	7	operator        	:=
+10	10	identifer       	C
+10	12	operator        	+
+10	14	identifer       	A
+10	16	operator        	*
+10	18	delimeter       	(
+10	19	integer         	3
+10	21	operator        	+
+10	23	integer         	5
+10	25	operator        	*
+10	27	integer         	2
+10	28	delimeter       	)
+10	29	delimeter       	;
+11	5	reserved keyword	WRITE
+11	11	delimeter       	(
+11	13	operator        	-
+11	14	identifer       	C
+11	16	operator        	/
+11	17	delimeter       	(
+11	18	identifer       	A
+11	20	operator        	+
+11	22	integer         	1
+11	23	delimeter       	)
+11	24	delimeter       	)
+11	25	delimeter       	;
+12	1	reserved keyword	END
+12	4	delimeter       	;
+
+Number of tokens: 88

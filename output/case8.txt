@@ -1,0 +1,111 @@
+ROW	COL	TYPE			TOKEN/ERROR MESSAGE
+1	1	reserved keyword	PROGRAM
+1	9	reserved keyword	IS
+2	5	reserved keyword	VAR
+2	9	identifer       	I
+2	11	delimeter       	:
+2	13	identifer       	INTEGER
+2	21	operator        	:=
+2	24	integer         	0
+2	25	delimeter       	;
+3	5	reserved keyword	PROCEDURE
+3	15	identifer       	ADDONE
+3	21	delimeter       	(
+3	22	delimeter       	)
+3	24	reserved keyword	IS
+4	2	reserved keyword	VAR
+4	6	identifer       	J
+4	8	delimeter       	:
+4	10	identifer       	INTEGER
+4	18	operator        	:=
+4	21	integer         	0
+4	22	delimeter       	;
+5	2	reserved keyword	PROCEDURE
+5	12	identifer       	OKAY
+5	16	delimeter       	(
+5	17	delimeter       	)
+5	19	reserved keyword	IS
+6	6	reserved keyword	VAR
+6	10	identifer       	CONSTANT
+6	19	delimeter       	:
+6	21	identifer       	INTEGER
+6	29	operator        	:=
+6	32	integer         	0
+6	33	delimeter       	;
+7	2	reserved keyword	BEGIN
+8	6	identifer       	CONSTANT
+8	15	operator        	:=
+8	18	integer         	1
+8	19	delimeter       	;
+9	6	identifer       	J
+9	8	operator        	:=
+9	11	identifer       	J
+9	13	operator        	+
+9	15	identifer       	CONSTANT
+9	23	delimeter       	;
+10	2	reserved keyword	END
+10	5	delimeter       	;
+11	5	reserved keyword	BEGIN
+12	2	identifer       	J
+12	4	operator        	:=
+12	7	identifer       	I
+12	8	delimeter       	;
+13	2	identifer       	OKAY
+13	6	delimeter       	(
+13	7	delimeter       	)
+13	8	delimeter       	;
+14	2	identifer       	I
+14	4	operator        	:=
+14	7	identifer       	J
+14	8	delimeter       	;
+15	5	reserved keyword	END
+15	8	delimeter       	;
+16	1	reserved keyword	BEGIN
+17	5	identifer       	I
+17	7	operator        	:=
+17	10	integer         	0
+17	11	delimeter       	;
+18	5	reserved keyword	WRITE
+18	10	delimeter       	(
+18	11	string          	"I = "
+18	17	delimeter       	,
+18	19	identifer       	I
+18	20	delimeter       	,
+18	22	string          	" (SHOULD BE 0)"
+18	38	delimeter       	)
+18	39	delimeter       	;
+19	5	identifer       	ADDONE
+19	11	delimeter       	(
+19	12	delimeter       	)
+19	13	delimeter       	;
+20	5	reserved keyword	WRITE
+20	10	delimeter       	(
+20	11	string          	"I = "
+20	17	delimeter       	,
+20	19	identifer       	I
+20	20	delimeter       	,
+20	22	string          	" (SHOULD BE 1)"
+20	38	delimeter       	)
+20	39	delimeter       	;
+21	5	identifer       	ADDONE
+21	11	delimeter       	(
+21	12	delimeter       	)
+21	13	delimeter       	;
+22	5	reserved keyword	WRITE
+22	10	delimeter       	(
+22	11	string          	"I = "
+22	17	delimeter       	,
+22	19	identifer       	I
+22	20	delimeter       	,
+22	22	string          	" (SHOULD BE 2)"
+22	38	delimeter       	)
+22	39	delimeter       	;
+23	5	reserved keyword	WRITE
+23	10	delimeter       	(
+23	11	string          	"ALL DONE!"
+23	22	delimeter       	)
+23	23	delimeter       	;
+24	1	reserved keyword	END
+24	4	delimeter       	;
+
+Number of tokens: 108

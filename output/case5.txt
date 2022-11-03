@@ -1,0 +1,100 @@
+ROW	COL	TYPE			TOKEN/ERROR MESSAGE
+1	1	reserved keyword	PROGRAM
+1	9	reserved keyword	IS
+2	5	reserved keyword	VAR
+2	9	identifer       	I
+2	10	delimeter       	,
+2	11	identifer       	J
+2	13	delimeter       	:
+2	15	identifer       	INTEGER
+2	23	operator        	:=
+2	26	integer         	0
+2	27	delimeter       	;
+3	1	reserved keyword	BEGIN
+4	2	reserved keyword	WRITE
+4	7	delimeter       	(
+4	8	string          	"Ascending loop:"
+4	25	delimeter       	)
+4	26	delimeter       	;
+5	2	reserved keyword	FOR
+5	6	identifer       	I
+5	8	operator        	:=
+5	11	integer         	1
+5	13	reserved keyword	TO
+5	16	integer         	5
+5	18	reserved keyword	DO
+6	4	reserved keyword	WRITE
+6	9	delimeter       	(
+6	10	string          	"I = "
+6	16	delimeter       	,
+6	18	identifer       	I
+6	19	delimeter       	)
+6	20	delimeter       	;
+7	9	reserved keyword	END
+7	12	delimeter       	;
+8	2	reserved keyword	WRITE
+8	7	delimeter       	(
+8	8	string          	"Descending loop:"
+8	26	delimeter       	)
+8	27	delimeter       	;
+9	2	reserved keyword	FOR
+9	6	identifer       	I
+9	8	operator        	:=
+9	11	integer         	5
+9	13	reserved keyword	TO
+9	16	integer         	1
+9	18	reserved keyword	BY
+9	21	operator        	-
+9	22	integer         	1
+9	24	reserved keyword	DO
+10	4	reserved keyword	WRITE
+10	9	delimeter       	(
+10	10	string          	"I = "
+10	16	delimeter       	,
+10	18	identifer       	I
+10	19	delimeter       	)
+10	20	delimeter       	;
+11	9	reserved keyword	END
+11	12	delimeter       	;
+12	2	reserved keyword	WRITE
+12	7	delimeter       	(
+12	8	string          	"Double loop:"
+12	22	delimeter       	)
+12	23	delimeter       	;
+13	2	reserved keyword	FOR
+13	6	identifer       	I
+13	8	operator        	:=
+13	11	integer         	1
+13	13	reserved keyword	TO
+13	16	integer         	5
+13	18	reserved keyword	DO
+14	6	reserved keyword	FOR
+14	10	identifer       	J
+14	12	operator        	:=
+14	15	identifer       	I
+14	17	reserved keyword	TO
+14	20	identifer       	I
+14	21	operator        	+
+14	22	integer         	10
+14	25	reserved keyword	BY
+14	28	integer         	2
+14	30	reserved keyword	DO
+15	8	reserved keyword	WRITE
+15	13	delimeter       	(
+15	14	string          	"I,J = "
+15	22	delimeter       	,
+15	24	identifer       	I
+15	25	delimeter       	,
+15	27	string          	", "
+15	31	delimeter       	,
+15	33	identifer       	J
+15	34	delimeter       	)
+15	35	delimeter       	;
+16	11	reserved keyword	END
+16	14	delimeter       	;
+17	9	reserved keyword	END
+17	12	delimeter       	;
+18	1	reserved keyword	END
+18	4	delimeter       	;
+
+Number of tokens: 97

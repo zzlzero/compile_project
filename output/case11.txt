@@ -1,0 +1,55 @@
+ROW	COL	TYPE			TOKEN/ERROR MESSAGE
+2	1	integer         	11111111
+5	1	ERROR: Integer out of range
+11111111111111111111
+8	1	real            	123456789012345678901234567890.0
+11	1	string          	"abcdefg"
+14	1	string          	"abcde	g"
+17	1	string          	"abcde			g"
+20	1	string          	"123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345"
+23	1	ERROR: String too long
+26	1	string          	""
+29	1	string          	"(*"
+32	1	identifer       	x12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234
+35	1	identifer       	x123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345
+38	1	identifer       	if
+38	4	identifer       	x
+38	5	operator        	<
+38	6	integer         	7
+38	7	identifer       	then
+38	12	identifer       	y
+38	13	operator        	:=
+38	15	identifer       	y
+38	16	operator        	+
+38	17	integer         	17
+41	1	real            	123.
+41	5	identifer       	x
+46	1	identifer       	xx
+46	3	delimeter       	(
+46	4	operator        	*
+46	6	identifer       	an
+46	9	identifer       	ok
+46	12	identifer       	comment
+46	20	identifer       	with
+46	25	identifer       	an
+46	28	identifer       	embedded
+46	37	identifer       	tab
+47	1	identifer       	and
+47	5	identifer       	cr
+47	8	operator        	*
+47	9	delimeter       	)
+47	10	identifer       	yy
+50	2	identifer       	abc
+53	2	identifer       	abc
+56	2	identifer       	abc
+59	1	string          	"abc(*abcabcc*)"
+74	1	delimeter       	(
+74	2	operator        	*
+74	3	operator        	*
+74	4	operator        	*
+74	5	operator        	*
+74	6	integer         	123
+74	9	operator        	*
+74	10	operator        	*
+
+Number of tokens: 51

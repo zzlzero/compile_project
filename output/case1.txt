@@ -1,0 +1,53 @@
+ROW	COL	TYPE			TOKEN/ERROR MESSAGE
+1	1	reserved keyword	PROGRAM
+1	9	reserved keyword	IS
+2	5	reserved keyword	VAR
+2	9	identifer       	i
+2	10	delimeter       	,
+2	12	identifer       	j
+2	14	delimeter       	:
+2	16	identifer       	INTEGER
+2	24	operator        	:=
+2	27	integer         	1
+2	28	delimeter       	;
+3	5	reserved keyword	VAR
+3	9	identifer       	x
+3	11	delimeter       	:
+3	13	identifer       	REAL
+3	18	operator        	:=
+3	21	real            	2.0
+3	24	delimeter       	;
+4	5	reserved keyword	VAR
+4	9	identifer       	y
+4	11	delimeter       	:
+4	13	identifer       	REAL
+4	18	operator        	:=
+4	21	real            	3.0
+4	24	delimeter       	;
+5	1	reserved keyword	BEGIN
+6	5	reserved keyword	WRITE
+6	11	delimeter       	(
+6	12	string          	"i = "
+6	18	delimeter       	,
+6	20	identifer       	i
+6	21	delimeter       	,
+6	23	string          	", j = "
+6	31	delimeter       	,
+6	33	identifer       	j
+6	34	delimeter       	)
+6	35	delimeter       	;
+7	5	reserved keyword	WRITE
+7	11	delimeter       	(
+7	12	string          	"x = "
+7	18	delimeter       	,
+7	20	identifer       	x
+7	21	delimeter       	,
+7	23	string          	", y = "
+7	31	delimeter       	,
+7	33	identifer       	y
+7	34	delimeter       	)
+7	35	delimeter       	;
+8	1	reserved keyword	END
+8	4	delimeter       	;
+
+Number of tokens: 50

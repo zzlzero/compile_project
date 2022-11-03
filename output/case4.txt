@@ -1,0 +1,228 @@
+ROW	COL	TYPE			TOKEN/ERROR MESSAGE
+1	1	reserved keyword	PROGRAM
+1	9	reserved keyword	IS
+2	5	reserved keyword	VAR
+2	9	identifer       	I
+2	11	delimeter       	:
+2	13	identifer       	INTEGER
+2	21	operator        	:=
+2	24	integer         	0
+2	25	delimeter       	;
+3	5	reserved keyword	TYPE
+3	10	identifer       	COMPLEX
+3	18	reserved keyword	IS
+3	21	reserved keyword	RECORD
+3	28	identifer       	R
+3	29	delimeter       	:
+3	31	identifer       	REAL
+3	35	delimeter       	;
+3	37	identifer       	I
+3	39	delimeter       	:
+3	41	identifer       	REAL
+3	45	delimeter       	;
+3	47	reserved keyword	END
+3	50	delimeter       	;
+4	5	reserved keyword	TYPE
+4	10	identifer       	PAIR
+4	15	reserved keyword	IS
+4	18	reserved keyword	RECORD
+4	25	identifer       	FIRST
+4	30	delimeter       	:
+4	32	identifer       	COMPLEX
+4	39	delimeter       	;
+4	41	identifer       	SECOND
+4	48	delimeter       	:
+4	50	identifer       	COMPLEX
+4	57	delimeter       	;
+4	59	reserved keyword	END
+4	62	delimeter       	;
+5	5	reserved keyword	VAR
+5	9	identifer       	C
+5	11	delimeter       	:
+5	13	identifer       	COMPLEX
+5	21	operator        	:=
+5	24	identifer       	COMPLEX
+5	32	delimeter       	{
+5	34	identifer       	R
+5	36	operator        	:=
+5	39	real            	0.0
+5	42	delimeter       	;
+5	44	identifer       	I
+5	46	operator        	:=
+5	49	real            	0.0
+5	53	delimeter       	}
+5	54	delimeter       	;
+6	5	reserved keyword	VAR
+6	9	identifer       	P
+6	11	delimeter       	:
+6	13	identifer       	PAIR
+6	18	operator        	:=
+6	21	identifer       	PAIR
+6	26	delimeter       	{
+6	28	identifer       	FIRST
+6	34	operator        	:=
+6	37	identifer       	COMPLEX
+6	45	delimeter       	{
+6	47	identifer       	R
+6	49	operator        	:=
+6	52	real            	0.0
+6	55	delimeter       	;
+6	57	identifer       	I
+6	59	operator        	:=
+6	62	real            	0.0
+6	66	delimeter       	}
+6	67	delimeter       	;
+7	28	identifer       	SECOND
+7	35	operator        	:=
+7	38	identifer       	COMPLEX
+7	46	delimeter       	{
+7	48	identifer       	R
+7	50	operator        	:=
+7	53	real            	0.0
+7	56	delimeter       	;
+7	58	identifer       	I
+7	60	operator        	:=
+7	63	real            	0.0
+7	67	delimeter       	}
+7	69	delimeter       	}
+7	70	delimeter       	;
+8	5	reserved keyword	PROCEDURE
+8	15	identifer       	PRINT
+8	20	delimeter       	(
+8	21	delimeter       	)
+8	23	reserved keyword	IS
+8	26	reserved keyword	BEGIN
+9	2	reserved keyword	WRITE
+9	7	delimeter       	(
+9	8	string          	"    ("
+9	15	delimeter       	,
+9	17	identifer       	C
+9	18	delimeter       	.
+9	19	identifer       	R
+9	20	delimeter       	,
+9	22	string          	", "
+9	26	delimeter       	,
+9	28	identifer       	C
+9	29	delimeter       	.
+9	30	identifer       	I
+9	31	delimeter       	,
+9	33	string          	")"
+9	36	delimeter       	)
+9	37	delimeter       	;
+10	5	reserved keyword	END
+10	8	delimeter       	;
+11	1	reserved keyword	BEGIN
+12	5	identifer       	C
+12	6	delimeter       	.
+12	7	identifer       	R
+12	9	operator        	:=
+12	12	real            	1.0
+12	15	delimeter       	;
+13	5	identifer       	C
+13	6	delimeter       	.
+13	7	identifer       	I
+13	9	operator        	:=
+13	12	real            	0.0
+13	15	delimeter       	;
+14	5	identifer       	P
+14	6	delimeter       	.
+14	7	identifer       	FIRST
+14	13	operator        	:=
+14	16	identifer       	C
+14	17	delimeter       	;
+15	5	identifer       	C
+15	6	delimeter       	.
+15	7	identifer       	R
+15	9	operator        	:=
+15	12	real            	0.0
+15	15	delimeter       	;
+16	5	identifer       	C
+16	6	delimeter       	.
+16	7	identifer       	I
+16	9	operator        	:=
+16	12	real            	1.0
+16	15	delimeter       	;
+17	5	identifer       	P
+17	6	delimeter       	.
+17	7	identifer       	SECOND
+17	14	operator        	:=
+17	17	identifer       	C
+17	18	delimeter       	;
+18	5	identifer       	C
+18	7	operator        	:=
+18	10	identifer       	P
+18	11	delimeter       	.
+18	12	identifer       	FIRST
+18	17	delimeter       	;
+19	5	reserved keyword	WRITE
+19	11	delimeter       	(
+19	12	string          	"The first complex number should be (1.0, 0.0):"
+19	60	delimeter       	)
+19	61	delimeter       	;
+20	5	identifer       	PRINT
+20	10	delimeter       	(
+20	11	delimeter       	)
+20	12	delimeter       	;
+21	5	identifer       	C
+21	7	operator        	:=
+21	10	identifer       	P
+21	11	delimeter       	.
+21	12	identifer       	SECOND
+21	18	delimeter       	;
+22	5	reserved keyword	WRITE
+22	11	delimeter       	(
+22	12	string          	"The second complex number should be (0.0, 1.0):"
+22	61	delimeter       	)
+22	62	delimeter       	;
+23	5	identifer       	PRINT
+23	10	delimeter       	(
+23	11	delimeter       	)
+23	12	delimeter       	;
+24	5	reserved keyword	IF
+24	8	identifer       	P
+24	9	delimeter       	.
+24	10	identifer       	FIRST
+24	15	delimeter       	.
+24	16	identifer       	R
+24	18	operator        	<>
+24	21	identifer       	P
+24	22	delimeter       	.
+24	23	identifer       	SECOND
+24	29	delimeter       	.
+24	30	identifer       	R
+24	32	reserved keyword	THEN
+25	2	reserved keyword	WRITE
+25	8	delimeter       	(
+25	9	string          	"and these two complex numbers are not equal!"
+25	55	delimeter       	)
+25	56	delimeter       	;
+26	5	reserved keyword	ELSIF
+26	11	identifer       	P
+26	12	delimeter       	.
+26	13	identifer       	FIRST
+26	18	delimeter       	.
+26	19	identifer       	I
+26	21	operator        	<>
+26	24	identifer       	P
+26	25	delimeter       	.
+26	26	identifer       	SECOND
+26	32	delimeter       	.
+26	33	identifer       	I
+26	35	reserved keyword	THEN
+27	2	reserved keyword	WRITE
+27	8	delimeter       	(
+27	9	string          	"and these two complex numbers are not equal!"
+27	55	delimeter       	)
+27	56	delimeter       	;
+28	5	reserved keyword	ELSE
+29	2	reserved keyword	WRITE
+29	8	delimeter       	(
+29	9	string          	"and these two complex numbers are equal?"
+29	51	delimeter       	)
+29	52	delimeter       	;
+30	5	reserved keyword	END
+30	8	delimeter       	;
+31	1	reserved keyword	END
+31	4	delimeter       	;
+
+Number of tokens: 225

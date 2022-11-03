@@ -1,0 +1,143 @@
+ROW	COL	TYPE			TOKEN/ERROR MESSAGE
+1	1	reserved keyword	PROGRAM
+1	9	reserved keyword	IS
+2	5	reserved keyword	VAR
+2	9	identifer       	I
+2	10	delimeter       	,
+2	12	identifer       	ANSWER
+2	19	delimeter       	:
+2	21	identifer       	INTEGER
+2	29	operator        	:=
+2	32	integer         	0
+2	33	delimeter       	;
+3	5	reserved keyword	PROCEDURE
+3	15	identifer       	FACTORIAL
+3	24	delimeter       	(
+3	25	delimeter       	)
+3	27	reserved keyword	IS
+4	2	reserved keyword	VAR
+4	6	identifer       	J
+4	8	delimeter       	:
+4	10	identifer       	INTEGER
+4	18	operator        	:=
+4	21	integer         	0
+4	22	delimeter       	;
+5	2	reserved keyword	PROCEDURE
+6	11	identifer       	FACT
+6	15	delimeter       	(
+6	16	delimeter       	)
+6	18	reserved keyword	IS
+6	21	reserved keyword	BEGIN
+7	6	reserved keyword	IF
+7	9	identifer       	J
+7	11	operator        	<=
+7	14	identifer       	I
+7	16	reserved keyword	THEN
+7	21	identifer       	MULT
+7	25	delimeter       	(
+7	26	delimeter       	)
+7	27	delimeter       	;
+7	29	identifer       	J
+7	31	operator        	:=
+7	34	identifer       	J
+7	36	operator        	+
+7	38	integer         	1
+7	39	delimeter       	;
+7	41	identifer       	FACT
+7	45	delimeter       	(
+7	46	delimeter       	)
+7	47	delimeter       	;
+7	49	reserved keyword	END
+7	52	delimeter       	;
+8	4	reserved keyword	END
+8	7	delimeter       	;
+9	4	identifer       	MULT
+9	8	delimeter       	(
+9	9	delimeter       	)
+9	11	reserved keyword	IS
+10	6	reserved keyword	VAR
+10	10	identifer       	I
+10	12	delimeter       	:
+10	14	identifer       	INTEGER
+10	22	operator        	:=
+10	25	integer         	0
+10	26	delimeter       	;
+11	4	reserved keyword	BEGIN
+12	6	identifer       	I
+12	8	operator        	:=
+12	11	identifer       	ANSWER
+12	17	delimeter       	;
+13	13	identifer       	I
+13	15	operator        	:=
+13	18	identifer       	I
+13	20	operator        	*
+13	22	identifer       	J
+13	23	delimeter       	;
+14	13	identifer       	ANSWER
+14	20	operator        	:=
+14	23	identifer       	I
+14	24	delimeter       	;
+15	4	reserved keyword	END
+15	7	delimeter       	;
+16	5	reserved keyword	BEGIN
+17	2	identifer       	ANSWER
+17	9	operator        	:=
+17	12	integer         	1
+17	13	delimeter       	;
+18	2	identifer       	J
+18	4	operator        	:=
+18	7	integer         	1
+18	8	delimeter       	;
+19	2	identifer       	FACT
+19	6	delimeter       	(
+19	7	delimeter       	)
+19	8	delimeter       	;
+20	5	reserved keyword	END
+20	8	delimeter       	;
+21	1	reserved keyword	BEGIN
+22	5	reserved keyword	WRITE
+22	11	delimeter       	(
+22	12	string          	"The first 5 factorials are (in ascending order):"
+22	62	delimeter       	)
+22	63	delimeter       	;
+23	5	identifer       	I
+23	7	operator        	:=
+23	10	integer         	1
+23	11	delimeter       	;
+24	5	reserved keyword	LOOP
+25	2	reserved keyword	IF
+25	5	identifer       	I
+25	7	operator        	>
+25	9	integer         	5
+25	11	reserved keyword	THEN
+25	16	reserved keyword	EXIT
+25	20	delimeter       	;
+25	22	reserved keyword	END
+25	25	delimeter       	;
+26	9	identifer       	FACTORIAL
+26	18	delimeter       	(
+26	19	delimeter       	)
+26	20	delimeter       	;
+27	9	reserved keyword	WRITE
+27	14	delimeter       	(
+27	15	string          	"FACTORIAL("
+27	27	delimeter       	,
+27	29	identifer       	I
+27	30	delimeter       	,
+27	32	string          	") = "
+27	38	delimeter       	,
+27	40	identifer       	ANSWER
+27	46	delimeter       	)
+27	47	delimeter       	;
+28	2	identifer       	I
+28	4	operator        	:=
+28	7	identifer       	I
+28	9	operator        	+
+28	11	integer         	1
+28	12	delimeter       	;
+29	5	reserved keyword	END
+29	8	delimeter       	;
+30	1	reserved keyword	END
+30	4	delimeter       	;
+
+Number of tokens: 140

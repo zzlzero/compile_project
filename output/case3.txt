@@ -1,0 +1,99 @@
+ROW	COL	TYPE			TOKEN/ERROR MESSAGE
+1	1	reserved keyword	PROGRAM
+1	9	reserved keyword	IS
+2	5	reserved keyword	VAR
+2	9	identifer       	A
+2	10	delimeter       	,
+2	12	identifer       	B
+2	14	delimeter       	:
+2	16	identifer       	REAL
+2	21	operator        	:=
+2	24	real            	0.0
+2	27	delimeter       	;
+3	5	reserved keyword	VAR
+3	9	identifer       	I
+3	10	delimeter       	,
+3	12	identifer       	J
+3	14	delimeter       	:
+3	16	identifer       	INTEGER
+3	24	operator        	:=
+3	27	integer         	0
+3	28	delimeter       	;
+4	1	reserved keyword	BEGIN
+5	5	identifer       	A
+5	7	operator        	:=
+5	10	real            	5.0
+5	13	delimeter       	;
+6	5	identifer       	I
+6	7	operator        	:=
+6	10	operator        	-
+6	11	integer         	3
+6	12	delimeter       	;
+7	5	identifer       	J
+7	7	operator        	:=
+7	10	identifer       	I
+7	12	operator        	*
+7	14	integer         	10
+7	16	delimeter       	;
+8	5	identifer       	B
+8	7	operator        	:=
+8	10	identifer       	A
+8	12	operator        	+
+8	14	identifer       	I
+8	15	delimeter       	;
+9	5	identifer       	A
+9	7	operator        	:=
+9	10	identifer       	J
+9	12	operator        	/
+9	14	identifer       	B
+9	15	delimeter       	;
+10	5	identifer       	J
+10	7	operator        	:=
+10	10	identifer       	I
+10	12	operator        	-
+10	14	identifer       	J
+10	15	delimeter       	;
+11	5	identifer       	I
+11	7	operator        	:=
+11	10	identifer       	J
+11	12	operator        	/
+11	14	identifer       	I
+11	15	delimeter       	;
+12	5	identifer       	B
+12	7	operator        	:=
+12	10	identifer       	I
+12	12	operator        	-
+12	14	identifer       	B
+12	15	delimeter       	;
+13	5	reserved keyword	WRITE
+13	11	delimeter       	(
+13	13	string          	" A = "
+13	20	delimeter       	,
+13	22	operator        	-
+13	23	identifer       	A
+13	24	delimeter       	,
+13	26	string          	" | B = "
+13	35	delimeter       	,
+13	37	identifer       	B
+13	38	delimeter       	)
+13	39	delimeter       	;
+14	5	reserved keyword	WRITE
+14	11	delimeter       	(
+14	13	string          	""
+14	16	delimeter       	)
+14	17	delimeter       	;
+15	5	reserved keyword	WRITE
+15	11	delimeter       	(
+15	13	string          	" I = "
+15	20	delimeter       	,
+15	22	identifer       	I
+15	23	delimeter       	,
+15	25	string          	" |  J = "
+15	35	delimeter       	,
+15	37	identifer       	J
+15	39	delimeter       	)
+15	40	delimeter       	;
+17	1	reserved keyword	END
+17	4	delimeter       	;
+
+Number of tokens: 96

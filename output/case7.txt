@@ -1,0 +1,68 @@
+ROW	COL	TYPE			TOKEN/ERROR MESSAGE
+1	1	reserved keyword	PROGRAM
+1	9	reserved keyword	IS
+2	5	reserved keyword	VAR
+2	9	identifer       	I
+2	11	delimeter       	:
+2	13	identifer       	INTEGER
+2	21	operator        	:=
+2	24	integer         	0
+2	25	delimeter       	;
+3	5	reserved keyword	PROCEDURE
+3	15	identifer       	ADDONE
+3	21	delimeter       	(
+3	22	delimeter       	)
+3	24	reserved keyword	IS
+3	27	reserved keyword	BEGIN
+4	2	identifer       	I
+4	4	operator        	:=
+4	7	identifer       	I
+4	9	operator        	+
+4	11	integer         	1
+4	12	delimeter       	;
+5	5	reserved keyword	END
+5	8	delimeter       	;
+6	5	reserved keyword	PROCEDURE
+6	15	identifer       	PASSTHEBUCK
+6	26	delimeter       	(
+6	27	delimeter       	)
+6	29	reserved keyword	IS
+6	32	reserved keyword	BEGIN
+6	38	identifer       	ADDONE
+6	44	delimeter       	(
+6	45	delimeter       	)
+6	46	delimeter       	;
+6	48	reserved keyword	END
+6	51	delimeter       	;
+7	1	reserved keyword	BEGIN
+8	5	reserved keyword	WRITE
+8	10	delimeter       	(
+8	11	string          	"I = "
+8	17	delimeter       	,
+8	19	identifer       	I
+8	20	delimeter       	,
+8	22	string          	" (SHOULD BE 0)"
+8	38	delimeter       	)
+8	39	delimeter       	;
+9	5	identifer       	PASSTHEBUCK
+9	16	delimeter       	(
+9	17	delimeter       	)
+9	18	delimeter       	;
+10	5	reserved keyword	WRITE
+10	10	delimeter       	(
+10	11	string          	"I = "
+10	17	delimeter       	,
+10	19	identifer       	I
+10	20	delimeter       	,
+10	22	string          	" (SHOULD BE 1)"
+10	38	delimeter       	)
+10	39	delimeter       	;
+11	5	reserved keyword	WRITE
+11	10	delimeter       	(
+11	11	string          	"ALL DONE!"
+11	22	delimeter       	)
+11	23	delimeter       	;
+12	1	reserved keyword	END
+12	4	delimeter       	;
+
+Number of tokens: 65
