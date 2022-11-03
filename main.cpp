@@ -14,7 +14,7 @@ int main(int argc, char **argv)
     } else {
         yyin = stdin;
     }
-    printf("%s\t%s\t%s\t\t%s\n", "ROW","COL","TYPE","TOKEN/ERROR MESSAGE");
+    printf("%s\t%s\t%s\t\t\t%s\n", "ROW","COL","TYPE","TOKEN/ERROR MESSAGE");
 
     while (true){
         int n = yylex();
